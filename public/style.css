@@ -1,0 +1,251 @@
+.font-navbar {
+    color: black;
+}
+.font-navbar:hover {
+    color: #333333;
+}
+.expand{
+    position:relative;
+    text-decoration:none;
+    display:inline-block;
+  }
+  .expand:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #000;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:100% 50%
+  }
+  .expand:hover:after { 
+    color: #333333;
+    transform: scaleX(1);
+    transform-origin:0 50%;
+}
+
+.custom-border {
+    outline: 2px solid black; /* Ganti warna dan ketebalan sesuai kebutuhan */
+}
+
+/*  UNTUK GARIS DI HALAMAN UTAMA */
+.custom-line {
+    width: 45%;
+    height: 1px; /* Atur ketebalan garis */
+    background-color: #000000; /* Atur warna garis */
+    margin: 20px 0; /* Atur margin di atas dan di bawah garis */
+}
+
+.custom-line-myproject {
+    width: 50%;
+    height: 2px; /* Atur ketebalan garis */
+    background-color: #000000; /* Atur warna garis */
+    /* margin: 50px 0; */
+}
+
+/* UNTUK GARIS DI MY PROJECT */
+.hover-div {
+    padding: 20px;
+    /* transition: border-radius 0.3s ease-in-out; */
+}
+.hover-div:hover {
+    border-radius: 20px; /* Ganti radius sesuai kebutuhan */
+    outline: 2px solid black; /* Ganti warna dan ketebalan sesuai kebutuhan */
+}
+
+.non-text-decoration {
+    text-decoration:none;
+}
+
+.btn-resume {
+    text-decoration:none;
+}
+.btn-resume:hover {
+    transition: border-radius 0.3s ease-in-out;
+    outline: 2px solid black; /* Ganti warna dan ketebalan sesuai kebutuhan */
+}
+
+.wrapper-TopRatedMovie{
+    max-height: 320px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper-TopRatedMovie::-webkit-scrollbar{
+    width: 0px;
+}
+
+.wrapper-TopRatedMovie .item{
+    height: 200px;
+    min-width: 350px;
+    width: 350px;
+    margin-right: 20px;
+}
+
+.movie-card-TopRatedMovie {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.movie-card-TopRatedMovie img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card-TopRatedMovie:hover img {
+    transform: scale(1.1);
+}
+
+.movie-details-TopRatedMovie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.359);
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card-TopRatedMovie:hover .movie-details-TopRatedMovie {
+    opacity: 1;
+}
+
+.daleman-p-poster-TopRatedMovie {
+    border-radius: 8px;
+    /* background-color: #33333371; */
+    margin-left: 5%;
+    margin-top: 5%;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+/* Pemisah */
+
+.wrapper{
+    max-height: 320px;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.wrapper .item{
+    height: 300px;
+    min-width: 200px;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover img {
+    transform: scale(1.1);
+}
+
+.movie-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.359);
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card:hover .movie-details {
+    opacity: 1;
+}
+
+.daleman-p-poster {
+    border-radius: 8px;
+    background-color: #33333371;
+    margin-left: 8%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+
+.movie-card-detal {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.movie-card-detal img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.movie-card-detal:hover img {
+    transform: scale(1.1);
+}
+
+.movie-details-detal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;
+    text-align: center; */
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.359);
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card-detal:hover .movie-details {
+    opacity: 1;
+}
+
+.daleman-p-poster-detal {
+    border-radius: 8px;
+    background-color: #33333371;
+    margin-left: 8%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

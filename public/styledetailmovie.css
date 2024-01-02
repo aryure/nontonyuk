@@ -1,0 +1,46 @@
+
+.position-relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Sesuaikan lebar overlay sesuai kebutuhan */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0));
+    z-index: 2;
+    pointer-events: none; /* Untuk memastikan overlay tidak menghalangi interaksi dengan konten di bawahnya */
+}
+
+.font-zindex3 {
+    z-index: 3; /* Agar teks tetap berada di atas overlay */
+    position: relative; /* Ensure the z-index works as expected */
+    color: white;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.product-device,
+.product-device-2 {
+    z-index: 1; /* Agar elemen pelengkap tetap di bawah overlay */
+}
+
+.jarak {
+    margin-bottom: 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.warnabutton {
+    background-color: red;
+    color: white;
+    border-radius: 2px;
+}
+
+.warnabutton:hover {
+    background-color: rgb(151, 2, 2);
+}
